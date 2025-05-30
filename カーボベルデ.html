@@ -4,30 +4,42 @@
   <meta charset="UTF-8">
   <title>カーボベルデ</title>
   <style>
-    body {
+    html, body {
+      height: 100%;
+      margin: 0;
       background-color: white;
       color: #333;
       font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
       text-align: center;
-      padding: 50px 20px;
+      padding: 20px;
     }
 
     h1 {
       font-size: 2em;
+      margin-bottom: 30px;
     }
 
     audio {
-      margin-top: 30px;
       width: 90%;
       max-width: 400px;
     }
   </style>
 </head>
 <body>
-  <h1>カーボベルデ</h1>
-  <audio controls>
-    <source src="audio9/カーボベルデ.mp3" type="audio/mpeg">
-    お使いのブラウザは audio タグをサポートしていません。
-  </audio>
+  <div class="container">
+    <h1>カーボベルデ</h1>
+    <audio controls>
+      <source src="audio9/カーボベルデ.mp3" type="audio/mpeg">
+      お使いのブラウザは audio タグをサポートしていません。
+    </audio>
+  </div>
 </body>
 </html>
